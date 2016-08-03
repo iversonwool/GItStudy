@@ -20,7 +20,9 @@
     
     
     
-    NSLog(@"%@", __func__);
+    NSLog(@"%s", __func__);
+    printf("%s", __func__);
+    
 }
 
 - (void)didReceiveMemoryWarning {
