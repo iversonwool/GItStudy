@@ -16,6 +16,7 @@
 		D42C6ED71D5213AC00708321 /* GitStudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C6ED61D5213AC00708321 /* GitStudyTests.m */; };
 		D42C6EE21D5213AC00708321 /* GitStudyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C6EE11D5213AC00708321 /* GitStudyUITests.m */; };
 		D42C6EF21D54847100708321 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C6EF11D54847100708321 /* Person.m */; };
+		D44566F01D54A40C00AE7972 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = D44566EF1D54A40C00AE7972 /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,9 @@
 		D42C6EEF1D54829F00708321 /* runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = runtime.h; sourceTree = "<group>"; };
 		D42C6EF01D54847100708321 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		D42C6EF11D54847100708321 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		D44566ED1D549D6700AE7972 /* archive_header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = archive_header.h; sourceTree = "<group>"; };
+		D44566EE1D54A40C00AE7972 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		D44566EF1D54A40C00AE7972 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,12 +110,15 @@
 			isa = PBXGroup;
 			children = (
 				D42C6EEF1D54829F00708321 /* runtime.h */,
+				D44566ED1D549D6700AE7972 /* archive_header.h */,
 				D42C6EBF1D5213AC00708321 /* AppDelegate.h */,
 				D42C6EC01D5213AC00708321 /* AppDelegate.m */,
 				D42C6EC21D5213AC00708321 /* ViewController.h */,
 				D42C6EC31D5213AC00708321 /* ViewController.m */,
 				D42C6EF01D54847100708321 /* Person.h */,
 				D42C6EF11D54847100708321 /* Person.m */,
+				D44566EE1D54A40C00AE7972 /* Student.h */,
+				D44566EF1D54A40C00AE7972 /* Student.m */,
 				D42C6EC51D5213AC00708321 /* Main.storyboard */,
 				D42C6EC81D5213AC00708321 /* Assets.xcassets */,
 				D42C6ECA1D5213AC00708321 /* LaunchScreen.storyboard */,
@@ -282,6 +289,7 @@
 			files = (
 				D42C6EC41D5213AC00708321 /* ViewController.m in Sources */,
 				D42C6EC11D5213AC00708321 /* AppDelegate.m in Sources */,
+				D44566F01D54A40C00AE7972 /* Student.m in Sources */,
 				D42C6EF21D54847100708321 /* Person.m in Sources */,
 				D42C6EBE1D5213AC00708321 /* main.m in Sources */,
 			);

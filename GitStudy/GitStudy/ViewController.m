@@ -10,6 +10,12 @@
 
 #import <objc/runtime.h>
 #import "Person.h"
+#import "Student.h"
+
+#define PATHP [NSHomeDirectory() stringByAppendingPathComponent:@"persons.arc"]
+#define PATHS [NSHomeDirectory() stringByAppendingPathComponent:@"students.arc"]
+
+
 
 @interface ViewController ()
 
@@ -24,9 +30,75 @@
 //    NSLog(@"%s", __func__);
 //    printf("%s\n", __func__);
     
-    [self getIvarList];
+//    [self getIvarList];
+    
+    [self archivePerson];
+    
+    [self unarchivePerson];
+    
+    [self archiveStudents];
+    [self unarchiveStudents];
     
 }
+
+- (void)archivePerson {
+
+    Person *per0 = [[Person alloc] init];
+    per0.name = @"LeeHow";
+    
+    Person *per1 = [[Person alloc] init];
+    per1.name = @"leehow";
+    
+    NSArray *array = @[per0, per1];
+    
+    
+    
+    NSLog(@"%d", [NSKeyedArchiver archiveRootObject:array toFile:PATHP]);
+    
+    
+}
+
+- (void)unarchivePerson {
+
+    NSArray *array = [NSKeyedUnarchiver unarchiveObjectWithFile:PATHP];
+    
+    NSLog(@"%lu", array.count);
+    for (Person *per in array) {
+        NSLog(@"%@", per.name);
+    }
+}
+
+
+- (void)archiveStudents {
+    Student *stu0 = [[Student alloc] init];
+    stu0.name = @"abc";
+    
+    Student *stu1 = [[Student alloc] init];
+    stu1.name = @"123";
+    
+    NSArray *array = @[stu0, stu1];
+    
+    
+    
+    NSLog(@"%d", [NSKeyedArchiver archiveRootObject:array toFile:PATHS]);
+    
+
+    
+}
+
+
+- (void)unarchiveStudents {
+    
+    NSArray *array = [NSKeyedUnarchiver unarchiveObjectWithFile:PATHS];
+    
+    NSLog(@"%lu", array.count);
+    for (Student *stu in array) {
+        NSLog(@"%@", stu.name);
+    }
+}
+
+
+
 
 - (void)getIvarList {
 
