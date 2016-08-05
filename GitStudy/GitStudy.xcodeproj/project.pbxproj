@@ -15,6 +15,7 @@
 		D42C6ECC1D5213AC00708321 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42C6ECA1D5213AC00708321 /* LaunchScreen.storyboard */; };
 		D42C6ED71D5213AC00708321 /* GitStudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C6ED61D5213AC00708321 /* GitStudyTests.m */; };
 		D42C6EE21D5213AC00708321 /* GitStudyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C6EE11D5213AC00708321 /* GitStudyUITests.m */; };
+		D42C6EF21D54847100708321 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C6EF11D54847100708321 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		D42C6EDD1D5213AC00708321 /* GitStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42C6EE11D5213AC00708321 /* GitStudyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitStudyUITests.m; sourceTree = "<group>"; };
 		D42C6EE31D5213AC00708321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D42C6EEF1D54829F00708321 /* runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = runtime.h; sourceTree = "<group>"; };
+		D42C6EF01D54847100708321 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		D42C6EF11D54847100708321 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +105,13 @@
 		D42C6EBB1D5213AC00708321 /* GitStudy */ = {
 			isa = PBXGroup;
 			children = (
+				D42C6EEF1D54829F00708321 /* runtime.h */,
 				D42C6EBF1D5213AC00708321 /* AppDelegate.h */,
 				D42C6EC01D5213AC00708321 /* AppDelegate.m */,
 				D42C6EC21D5213AC00708321 /* ViewController.h */,
 				D42C6EC31D5213AC00708321 /* ViewController.m */,
+				D42C6EF01D54847100708321 /* Person.h */,
+				D42C6EF11D54847100708321 /* Person.m */,
 				D42C6EC51D5213AC00708321 /* Main.storyboard */,
 				D42C6EC81D5213AC00708321 /* Assets.xcassets */,
 				D42C6ECA1D5213AC00708321 /* LaunchScreen.storyboard */,
@@ -275,6 +282,7 @@
 			files = (
 				D42C6EC41D5213AC00708321 /* ViewController.m in Sources */,
 				D42C6EC11D5213AC00708321 /* AppDelegate.m in Sources */,
+				D42C6EF21D54847100708321 /* Person.m in Sources */,
 				D42C6EBE1D5213AC00708321 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +507,7 @@
 				D42C6EE81D5213AC00708321 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D42C6EE91D5213AC00708321 /* Build configuration list for PBXNativeTarget "GitStudyTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +516,7 @@
 				D42C6EEB1D5213AC00708321 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D42C6EEC1D5213AC00708321 /* Build configuration list for PBXNativeTarget "GitStudyUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +525,7 @@
 				D42C6EEE1D5213AC00708321 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
