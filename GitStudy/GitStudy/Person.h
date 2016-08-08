@@ -17,7 +17,7 @@
 @property (nonatomic, strong) NSString *age;
 @property (nonatomic, strong) NSString *height;
 
-
++ (instancetype)sharedPerson;
 
 
 @end

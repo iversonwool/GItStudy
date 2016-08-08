@@ -31,14 +31,15 @@
 //    printf("%s\n", __func__);
     
 //    [self getIvarList];
-    
     [self archivePerson];
-    
     [self unarchivePerson];
-    
     [self archiveStudents];
     [self unarchiveStudents];
     
+    // 创建person单例
+    Person *per0 = [Person sharedPerson];
+    Person *per1 = [Person sharedPerson];
+    NSLog(@"%@, %@", per0, per1);
 }
 
 - (void)archivePerson {
