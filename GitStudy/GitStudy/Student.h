@@ -11,9 +11,6 @@
 
 @interface Student : NSObject <NSCoding>
 
-
 @property (nonatomic, strong) NSString *name;
-
-
 
 @end

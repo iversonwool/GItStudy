@@ -11,11 +11,10 @@
 #import <objc/runtime.h>
 #import "Person.h"
 #import "Student.h"
+#import "StudentManager.h"
 
 #define PATHP [NSHomeDirectory() stringByAppendingPathComponent:@"persons.arc"]
 #define PATHS [NSHomeDirectory() stringByAppendingPathComponent:@"students.arc"]
-
-
 
 @interface ViewController ()
 
@@ -40,6 +39,15 @@
     Person *per0 = [Person sharedPerson];
     Person *per1 = [Person sharedPerson];
     NSLog(@"%@, %@", per0, per1);
+    
+    // 创建studentManager单例
+    [self createStudentManagerSingleton];
+}
+
+- (void)createStudentManagerSingleton {
+    StudentManager *manager0 = [[StudentManager alloc] init];
+    StudentManager *manager1 = [[StudentManager alloc] init];
+    NSLog(@"%p, %p", manager0, manager1);
 }
 
 - (void)archivePerson {
@@ -51,9 +59,6 @@
     per1.name = @"leehow";
     
     NSArray *array = @[per0, per1];
-    
-    
-    
     NSLog(@"%d", [NSKeyedArchiver archiveRootObject:array toFile:PATHP]);
     
     
@@ -78,38 +83,23 @@
     stu1.name = @"123";
     
     NSArray *array = @[stu0, stu1];
-    
-    
-    
     NSLog(@"%d", [NSKeyedArchiver archiveRootObject:array toFile:PATHS]);
-    
-
-    
 }
 
 
 - (void)unarchiveStudents {
-    
     NSArray *array = [NSKeyedUnarchiver unarchiveObjectWithFile:PATHS];
-    
     NSLog(@"%lu", array.count);
     for (Student *stu in array) {
         NSLog(@"%@", stu.name);
     }
 }
 
-
-
-
 - (void)getIvarList {
-
     unsigned int count = 0;
-    
     Ivar *ivars = class_copyIvarList([Person class], &count);
-    
     for (int i=0; i<count; i++) {
         Ivar ivar = ivars[i];
-        
         // 查看成员变量
         const char *ivar_name = ivar_getName(ivar);
         NSLog(@"%s", ivar_name);

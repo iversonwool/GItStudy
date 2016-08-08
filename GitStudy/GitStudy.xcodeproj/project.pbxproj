@@ -17,6 +17,7 @@
 		D42C6EE21D5213AC00708321 /* GitStudyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C6EE11D5213AC00708321 /* GitStudyUITests.m */; };
 		D42C6EF21D54847100708321 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C6EF11D54847100708321 /* Person.m */; };
 		D44566F01D54A40C00AE7972 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = D44566EF1D54A40C00AE7972 /* Student.m */; };
+		D44566F31D58704800AE7972 /* StudentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D44566F21D58704800AE7972 /* StudentManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		D44566ED1D549D6700AE7972 /* archive_header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = archive_header.h; sourceTree = "<group>"; };
 		D44566EE1D54A40C00AE7972 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		D44566EF1D54A40C00AE7972 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		D44566F11D58704800AE7972 /* StudentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentManager.h; sourceTree = "<group>"; };
+		D44566F21D58704800AE7972 /* StudentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				D42C6EF11D54847100708321 /* Person.m */,
 				D44566EE1D54A40C00AE7972 /* Student.h */,
 				D44566EF1D54A40C00AE7972 /* Student.m */,
+				D44566F11D58704800AE7972 /* StudentManager.h */,
+				D44566F21D58704800AE7972 /* StudentManager.m */,
 				D42C6EC51D5213AC00708321 /* Main.storyboard */,
 				D42C6EC81D5213AC00708321 /* Assets.xcassets */,
 				D42C6ECA1D5213AC00708321 /* LaunchScreen.storyboard */,
@@ -288,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D42C6EC41D5213AC00708321 /* ViewController.m in Sources */,
+				D44566F31D58704800AE7972 /* StudentManager.m in Sources */,
 				D42C6EC11D5213AC00708321 /* AppDelegate.m in Sources */,
 				D44566F01D54A40C00AE7972 /* Student.m in Sources */,
 				D42C6EF21D54847100708321 /* Person.m in Sources */,

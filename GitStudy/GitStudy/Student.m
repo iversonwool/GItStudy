@@ -15,4 +15,16 @@ ARCHIVE(Student)
 
 UNARCHIVE(Student)
 
+
+// alloc 方法内部会掉用allocWithZone
++ (instancetype)alloc {
+    NSLog(@"%s", __func__);
+    return [super alloc];
+}
+
++ (instancetype)allocWithZone:(struct _NSZone *)zone {
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    return [super allocWithZone:zone];
+}
+
 @end
