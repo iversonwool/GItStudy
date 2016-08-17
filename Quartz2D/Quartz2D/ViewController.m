@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    LineView *lineView = [[LineView alloc] initWithFrame:CGRectMake(0, 64, self.view.bounds.size.width, 250)];
+    LineView *lineView = [[LineView alloc] initWithFrame:CGRectMake(0, 64, 250, 250)];
     lineView.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:lineView];
 }
