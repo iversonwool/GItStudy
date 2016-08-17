@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Jt3-Nt-OGB">
+                                <rect key="frame" x="68" y="284" width="464" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HQT-mx-KIj"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="valueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="WNf-v5-Jmz"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLm-Na-BMf" customClass="ProgressView">
+                                <rect key="frame" x="225" y="84" width="150" height="150"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="1kV-BM-IaD"/>
+                                    <constraint firstAttribute="height" constant="150" id="3PB-Na-9zT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lLm-Na-BMf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="YWS-KU-Nk9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jt3-Nt-OGB" secondAttribute="trailing" constant="50" id="hwQ-8Y-gKL"/>
+                            <constraint firstItem="Jt3-Nt-OGB" firstAttribute="top" secondItem="lLm-Na-BMf" secondAttribute="bottom" constant="50" id="jge-oY-b4N"/>
+                            <constraint firstItem="Jt3-Nt-OGB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="kdx-0x-hRh"/>
+                            <constraint firstItem="lLm-Na-BMf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ptN-Cx-cJU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="lLm-Na-BMf" id="2cy-m2-Lem"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295" y="323"/>
+        </scene>
+    </scenes>
+</document>
