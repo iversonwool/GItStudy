@@ -18,6 +18,7 @@
 		D44568001D64C2C000AE7972 /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = D44567FF1D64C2C000AE7972 /* BackgroundView.m */; };
 		D44568031D64C38C00AE7972 /* NSNumber+RandomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = D44568021D64C38C00AE7972 /* NSNumber+RandomNumber.m */; };
 		D44568061D64C5AE00AE7972 /* UIColor+RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D44568051D64C5AE00AE7972 /* UIColor+RandomColor.m */; };
+		D44568091D6551D700AE7972 /* BarBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = D44568081D6551D700AE7972 /* BarBgView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		D44568021D64C38C00AE7972 /* NSNumber+RandomNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+RandomNumber.m"; sourceTree = "<group>"; };
 		D44568041D64C5AE00AE7972 /* UIColor+RandomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RandomColor.h"; sourceTree = "<group>"; };
 		D44568051D64C5AE00AE7972 /* UIColor+RandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RandomColor.m"; sourceTree = "<group>"; };
+		D44568071D6551D700AE7972 /* BarBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarBgView.h; sourceTree = "<group>"; };
+		D44568081D6551D700AE7972 /* BarBgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarBgView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				D44567D21D64C27600AE7972 /* ViewController.m */,
 				D44567FE1D64C2C000AE7972 /* BackgroundView.h */,
 				D44567FF1D64C2C000AE7972 /* BackgroundView.m */,
+				D44568071D6551D700AE7972 /* BarBgView.h */,
+				D44568081D6551D700AE7972 /* BarBgView.m */,
 				D44568011D64C38C00AE7972 /* NSNumber+RandomNumber.h */,
 				D44568021D64C38C00AE7972 /* NSNumber+RandomNumber.m */,
 				D44568041D64C5AE00AE7972 /* UIColor+RandomColor.h */,
@@ -291,6 +296,7 @@
 				D44568031D64C38C00AE7972 /* NSNumber+RandomNumber.m in Sources */,
 				D44567D31D64C27600AE7972 /* ViewController.m in Sources */,
 				D44567D01D64C27600AE7972 /* AppDelegate.m in Sources */,
+				D44568091D6551D700AE7972 /* BarBgView.m in Sources */,
 				D44568001D64C2C000AE7972 /* BackgroundView.m in Sources */,
 				D44568061D64C5AE00AE7972 /* UIColor+RandomColor.m in Sources */,
 				D44567CD1D64C27600AE7972 /* main.m in Sources */,
@@ -517,6 +523,7 @@
 				D44567F71D64C27700AE7972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D44567F81D64C27700AE7972 /* Build configuration list for PBXNativeTarget "PieGraphTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +532,7 @@
 				D44567FA1D64C27700AE7972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D44567FB1D64C27700AE7972 /* Build configuration list for PBXNativeTarget "PieGraphUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +541,7 @@
 				D44567FD1D64C27700AE7972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

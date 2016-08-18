@@ -39,7 +39,6 @@
     
         startAngle = endAngle;
     
-//    NSNumber *num = array.firstObject;
         angle = number.intValue/sum*M_PI*2;
         endAngle = startAngle + angle;
         UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:center radius:radius startAngle:startAngle endAngle:endAngle clockwise:YES];

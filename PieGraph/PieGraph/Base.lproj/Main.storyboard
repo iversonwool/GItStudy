@@ -25,11 +25,21 @@
                                     <constraint firstAttribute="width" constant="200" id="fZA-1M-Cdq"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4kI-pK-3Ek" customClass="BarBgView">
+                                <rect key="frame" x="225" y="340" width="150" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="1WV-LM-kpt"/>
+                                    <constraint firstAttribute="height" constant="150" id="J6a-0w-O4o"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gU3-K9-bFD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K9U-PR-xmM"/>
                             <constraint firstItem="gU3-K9-bFD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="Q9o-Iu-NXM"/>
+                            <constraint firstItem="4kI-pK-3Ek" firstAttribute="top" secondItem="gU3-K9-bFD" secondAttribute="bottom" constant="20" id="jqL-MD-0md"/>
+                            <constraint firstItem="4kI-pK-3Ek" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oiS-04-Mke"/>
                         </constraints>
                     </view>
                 </viewController>
