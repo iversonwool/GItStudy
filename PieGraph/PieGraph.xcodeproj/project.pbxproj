@@ -19,6 +19,8 @@
 		D44568031D64C38C00AE7972 /* NSNumber+RandomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = D44568021D64C38C00AE7972 /* NSNumber+RandomNumber.m */; };
 		D44568061D64C5AE00AE7972 /* UIColor+RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D44568051D64C5AE00AE7972 /* UIColor+RandomColor.m */; };
 		D44568091D6551D700AE7972 /* BarBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = D44568081D6551D700AE7972 /* BarBgView.m */; };
+		D445680C1D6559BD00AE7972 /* BGView.m in Sources */ = {isa = PBXBuildFile; fileRef = D445680B1D6559BD00AE7972 /* BGView.m */; };
+		D445680E1D655B6400AE7972 /* IMG_0008.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D445680D1D655B6400AE7972 /* IMG_0008.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,9 @@
 		D44568051D64C5AE00AE7972 /* UIColor+RandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RandomColor.m"; sourceTree = "<group>"; };
 		D44568071D6551D700AE7972 /* BarBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarBgView.h; sourceTree = "<group>"; };
 		D44568081D6551D700AE7972 /* BarBgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarBgView.m; sourceTree = "<group>"; };
+		D445680A1D6559BD00AE7972 /* BGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGView.h; sourceTree = "<group>"; };
+		D445680B1D6559BD00AE7972 /* BGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGView.m; sourceTree = "<group>"; };
+		D445680D1D655B6400AE7972 /* IMG_0008.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0008.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +118,7 @@
 		D44567CA1D64C27600AE7972 /* PieGraph */ = {
 			isa = PBXGroup;
 			children = (
+				D445680D1D655B6400AE7972 /* IMG_0008.JPG */,
 				D44567CE1D64C27600AE7972 /* AppDelegate.h */,
 				D44567CF1D64C27600AE7972 /* AppDelegate.m */,
 				D44567D11D64C27600AE7972 /* ViewController.h */,
@@ -121,6 +127,8 @@
 				D44567FF1D64C2C000AE7972 /* BackgroundView.m */,
 				D44568071D6551D700AE7972 /* BarBgView.h */,
 				D44568081D6551D700AE7972 /* BarBgView.m */,
+				D445680A1D6559BD00AE7972 /* BGView.h */,
+				D445680B1D6559BD00AE7972 /* BGView.m */,
 				D44568011D64C38C00AE7972 /* NSNumber+RandomNumber.h */,
 				D44568021D64C38C00AE7972 /* NSNumber+RandomNumber.m */,
 				D44568041D64C5AE00AE7972 /* UIColor+RandomColor.h */,
@@ -269,6 +277,7 @@
 				D44567DB1D64C27600AE7972 /* LaunchScreen.storyboard in Resources */,
 				D44567D81D64C27600AE7972 /* Assets.xcassets in Resources */,
 				D44567D61D64C27600AE7972 /* Main.storyboard in Resources */,
+				D445680E1D655B6400AE7972 /* IMG_0008.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +309,7 @@
 				D44568001D64C2C000AE7972 /* BackgroundView.m in Sources */,
 				D44568061D64C5AE00AE7972 /* UIColor+RandomColor.m in Sources */,
 				D44567CD1D64C27600AE7972 /* main.m in Sources */,
+				D445680C1D6559BD00AE7972 /* BGView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
