@@ -26,7 +26,7 @@
     // 1.创建上下文
     // size  新图片的大小
     // YES －－不透明    NO－－透明
-    UIGraphicsBeginImageContextWithOptions(oldImage.size, NO, 0.0);
+    UIGraphicsBeginImageContextWithOptions(oldImage.size, NO, 1);
     
     [oldImage drawAtPoint:CGPointZero];
     
