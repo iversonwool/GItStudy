@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:DropImage.xcodeproj">
+      location = "self:ContextStack.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,6 +1,6 @@
 //
-//  DropImageUITests.m
-//  DropImageUITests
+//  ContextStackUITests.m
+//  ContextStackUITests
 //
 //  Created by 李浩 on 16/8/18.
 //  Copyright © 2016年 李浩. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface DropImageUITests : XCTestCase
+@interface ContextStackUITests : XCTestCase
 
 @end
 
-@implementation DropImageUITests
+@implementation ContextStackUITests
 
 - (void)setUp {
     [super setUp];
