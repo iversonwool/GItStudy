@@ -16,6 +16,7 @@
 		D445687D1D658DA600AE7972 /* ContextStackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D445687C1D658DA600AE7972 /* ContextStackTests.m */; };
 		D44568881D658DA600AE7972 /* ContextStackUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D44568871D658DA600AE7972 /* ContextStackUITests.m */; };
 		D44568971D658DDE00AE7972 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = D44568961D658DDE00AE7972 /* MyView.m */; };
+		D44568991D65AB6300AE7972 /* IMG_0008.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D44568981D65AB6300AE7972 /* IMG_0008.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		D44568891D658DA600AE7972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D44568951D658DDE00AE7972 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
 		D44568961D658DDE00AE7972 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		D44568981D65AB6300AE7972 /* IMG_0008.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0008.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				D44568951D658DDE00AE7972 /* MyView.h */,
 				D44568961D658DDE00AE7972 /* MyView.m */,
 				D445686E1D658DA600AE7972 /* Assets.xcassets */,
+				D44568981D65AB6300AE7972 /* IMG_0008.JPG */,
 				D44568701D658DA600AE7972 /* LaunchScreen.storyboard */,
 				D44568731D658DA600AE7972 /* Info.plist */,
 				D44568621D658DA600AE7972 /* Supporting Files */,
@@ -254,6 +257,7 @@
 				D44568721D658DA600AE7972 /* LaunchScreen.storyboard in Resources */,
 				D445686F1D658DA600AE7972 /* Assets.xcassets in Resources */,
 				D445686D1D658DA600AE7972 /* Main.storyboard in Resources */,
+				D44568991D65AB6300AE7972 /* IMG_0008.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +509,7 @@
 				D445688E1D658DA600AE7972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D445688F1D658DA600AE7972 /* Build configuration list for PBXNativeTarget "ContextStackTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				D44568911D658DA600AE7972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D44568921D658DA600AE7972 /* Build configuration list for PBXNativeTarget "ContextStackUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				D44568941D658DA600AE7972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

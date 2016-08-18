@@ -31,7 +31,7 @@
     
     CGContextAddPath(currentCtx, path.CGPath);
     
-    [[UIColor redColor] setFill];
+    [[UIColor greenColor] setFill];
     
     CGContextFillPath(currentCtx);
     

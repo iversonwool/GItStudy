@@ -25,13 +25,25 @@
                                     <constraint firstAttribute="height" constant="128" id="qma-2X-9th"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8UZ-H2-SU8">
+                                <rect key="frame" x="200" y="374" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="X8n-c6-NeL"/>
+                                    <constraint firstAttribute="height" constant="200" id="xjQ-iE-Ua3"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="8UZ-H2-SU8" firstAttribute="top" secondItem="XgV-Yq-N7q" secondAttribute="bottom" constant="36" id="7iO-yX-fzA"/>
+                            <constraint firstItem="8UZ-H2-SU8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PVE-XM-jUP"/>
                             <constraint firstItem="XgV-Yq-N7q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="190" id="mU8-Zu-HaP"/>
                             <constraint firstItem="XgV-Yq-N7q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ywd-Ol-t2Q"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="8UZ-H2-SU8" id="t8p-44-D3l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
