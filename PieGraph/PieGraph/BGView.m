@@ -25,14 +25,14 @@
     
     UIImage *image = [UIImage imageNamed:@"IMG_0008.jpg"];
     
-    CGRect frame = CGRectMake(0, 0, 100, 100);
+//    CGRect frame = CGRectMake(0, 0, 100, 100);
     
 //    UIRectClip(frame);
     
 //    [image drawInRect:frame];
-//    [image drawAtPoint:CGPointZero];
+    [image drawAtPoint:CGPointZero];
     
-    [image drawAsPatternInRect:frame];
+//    [image drawAsPatternInRect:frame];
 }
 
 - (void)stringEdit {

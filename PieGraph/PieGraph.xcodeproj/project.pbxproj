@@ -21,6 +21,7 @@
 		D44568091D6551D700AE7972 /* BarBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = D44568081D6551D700AE7972 /* BarBgView.m */; };
 		D445680C1D6559BD00AE7972 /* BGView.m in Sources */ = {isa = PBXBuildFile; fileRef = D445680B1D6559BD00AE7972 /* BGView.m */; };
 		D445680E1D655B6400AE7972 /* IMG_0008.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D445680D1D655B6400AE7972 /* IMG_0008.JPG */; };
+		D44568111D65617400AE7972 /* ImitateIMGView.m in Sources */ = {isa = PBXBuildFile; fileRef = D44568101D65617400AE7972 /* ImitateIMGView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		D445680A1D6559BD00AE7972 /* BGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGView.h; sourceTree = "<group>"; };
 		D445680B1D6559BD00AE7972 /* BGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGView.m; sourceTree = "<group>"; };
 		D445680D1D655B6400AE7972 /* IMG_0008.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0008.JPG; sourceTree = "<group>"; };
+		D445680F1D65617300AE7972 /* ImitateIMGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImitateIMGView.h; sourceTree = "<group>"; };
+		D44568101D65617400AE7972 /* ImitateIMGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImitateIMGView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 				D44568081D6551D700AE7972 /* BarBgView.m */,
 				D445680A1D6559BD00AE7972 /* BGView.h */,
 				D445680B1D6559BD00AE7972 /* BGView.m */,
+				D445680F1D65617300AE7972 /* ImitateIMGView.h */,
+				D44568101D65617400AE7972 /* ImitateIMGView.m */,
 				D44568011D64C38C00AE7972 /* NSNumber+RandomNumber.h */,
 				D44568021D64C38C00AE7972 /* NSNumber+RandomNumber.m */,
 				D44568041D64C5AE00AE7972 /* UIColor+RandomColor.h */,
@@ -306,6 +311,7 @@
 				D44567D31D64C27600AE7972 /* ViewController.m in Sources */,
 				D44567D01D64C27600AE7972 /* AppDelegate.m in Sources */,
 				D44568091D6551D700AE7972 /* BarBgView.m in Sources */,
+				D44568111D65617400AE7972 /* ImitateIMGView.m in Sources */,
 				D44568001D64C2C000AE7972 /* BackgroundView.m in Sources */,
 				D44568061D64C5AE00AE7972 /* UIColor+RandomColor.m in Sources */,
 				D44567CD1D64C27600AE7972 /* main.m in Sources */,

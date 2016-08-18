@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "ImitateIMGView.h"
+
 @interface ViewController ()
 
 @end
@@ -17,7 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    ImitateIMGView *imgV = [[ImitateIMGView alloc] initWithFrame:CGRectMake(5, 200, 50, 50)];
+    imgV.image = [UIImage imageNamed:@"IMG_0008.jpg"];
+    [self.view addSubview:imgV];
+    
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
