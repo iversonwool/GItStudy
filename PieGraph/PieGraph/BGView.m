@@ -8,8 +8,31 @@
 
 #import "BGView.h"
 
+@interface BGView ()
+
+@property (nonatomic, assign) CGFloat imgY;
+
+
+@end
+
 @implementation BGView
 
+
+// 图片滑落效果
+
+- (void)awakeFromNib {
+
+    self.imgY = 0;
+#warning 使用定时器会造成屏幕卡顿
+    // iPhone屏幕每秒刷新60次
+    
+    
+//    [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(setNeedsDisplay) userInfo:nil repeats:YES];
+    
+    CADisplayLink *link = [CADisplayLink displayLinkWithTarget:self selector:@selector(setNeedsDisplay)];
+    
+    [link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
+}
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
@@ -30,7 +53,12 @@
 //    UIRectClip(frame);
     
 //    [image drawInRect:frame];
-    [image drawAtPoint:CGPointZero];
+    [image drawAtPoint:CGPointMake(0, self.imgY)];
+    
+    self.imgY += 10;
+    if (self.imgY >= 200) {
+        self.imgY = 0;
+    }
     
 //    [image drawAsPatternInRect:frame];
 }
