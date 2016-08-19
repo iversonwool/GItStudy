@@ -11,11 +11,11 @@
 #import "UIView+TransformFrame.h"
 
 @interface UnlockView ()
+
 /** 保存滑动过程中选中的按钮*/
 @property (nonatomic, strong) NSMutableArray *btns;
 /** 记录滑动的位置*/
 @property (nonatomic, assign) CGPoint movePoint;
-
 
 @end
 
@@ -52,7 +52,7 @@ const int dotWidth = 74;
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         [btn setImage:[UIImage imageNamed:@"gesture_node_normal"] forState:UIControlStateNormal];
         [btn setImage:[UIImage imageNamed:@"gesture_node_highlighted"] forState:UIControlStateSelected];
-        
+        btn.tag = 100 + i;
         // 关闭button响应事件的功能
         btn.userInteractionEnabled = NO;
         [self addSubview:btn];
@@ -81,8 +81,15 @@ const int dotWidth = 74;
 
 // 获得当前触摸到的button
 - (UIButton *)getButtonFromPoint:(CGPoint)point {
+    
+    CGFloat radius = 30;
     for (UIButton *btn in self.subviews) {
-        bool contains = CGRectContainsPoint(btn.frame, point);
+        
+        // 缩小选中范围
+        CGFloat x = btn.center.x - radius / 2;
+        CGFloat y = btn.center.y - radius / 2;
+        CGRect frame = CGRectMake(x, y, radius, radius);
+        bool contains = CGRectContainsPoint(frame, point);
         if (contains) {
             
             return btn;
@@ -117,14 +124,45 @@ const int dotWidth = 74;
 
 }
 
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    
+    // 将用户的路径用按钮的tag值拼接成字符串保存起来
+    NSMutableString *mString = [NSMutableString string];
+    for (UIButton *btn in self.btns) {
+        [mString appendFormat:@"%lu", btn.tag];
+        
+    }
+    NSLog(@"%@", mString);
+    
+    // 将字符串写入沙盒保存用于比对
+    
+    // 取消btn的选中状态
+    [self.btns enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        UIButton *btn = obj;
+        btn.selected = NO;
+    }];
+    
+    // 清空数组
+    [self.btns removeAllObjects];
+    
+//    [self.btns makeObjectsPerformSelector:@selector(setSelected:) withObject:@NO];
+    [self setNeedsDisplay];
+    
+    
+    
+}
+
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     // Drawing code
     
+    if (_btns.count==0) {
+        return;
+    }
+    
     UIBezierPath *path = [UIBezierPath bezierPath];
-    
-    
     for (int i=0; i<self.btns.count; i++) {
         
         UIButton *btn = self.btns[i];
