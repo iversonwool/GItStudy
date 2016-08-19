@@ -16,6 +16,7 @@
 		D44568C11D65DCD900AE7972 /* ImageClippedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D44568C01D65DCD900AE7972 /* ImageClippedTests.m */; };
 		D44568CC1D65DCD900AE7972 /* ImageClippedUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D44568CB1D65DCD900AE7972 /* ImageClippedUITests.m */; };
 		D44568DA1D65DF0200AE7972 /* IMG_0008.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D44568D91D65DF0200AE7972 /* IMG_0008.JPG */; };
+		D44568DD1D66AA2100AE7972 /* UIImage+ClipAndCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = D44568DC1D66AA2100AE7972 /* UIImage+ClipAndCapture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		D44568CB1D65DCD900AE7972 /* ImageClippedUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageClippedUITests.m; sourceTree = "<group>"; };
 		D44568CD1D65DCD900AE7972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D44568D91D65DF0200AE7972 /* IMG_0008.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0008.JPG; sourceTree = "<group>"; };
+		D44568DB1D66AA2100AE7972 /* UIImage+ClipAndCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ClipAndCapture.h"; sourceTree = "<group>"; };
+		D44568DC1D66AA2100AE7972 /* UIImage+ClipAndCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ClipAndCapture.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 				D44568AA1D65DCD900AE7972 /* AppDelegate.m */,
 				D44568AC1D65DCD900AE7972 /* ViewController.h */,
 				D44568AD1D65DCD900AE7972 /* ViewController.m */,
+				D44568DB1D66AA2100AE7972 /* UIImage+ClipAndCapture.h */,
+				D44568DC1D66AA2100AE7972 /* UIImage+ClipAndCapture.m */,
 				D44568D91D65DF0200AE7972 /* IMG_0008.JPG */,
 				D44568AF1D65DCD900AE7972 /* Main.storyboard */,
 				D44568B21D65DCD900AE7972 /* Assets.xcassets */,
@@ -279,6 +284,7 @@
 			files = (
 				D44568AE1D65DCD900AE7972 /* ViewController.m in Sources */,
 				D44568AB1D65DCD900AE7972 /* AppDelegate.m in Sources */,
+				D44568DD1D66AA2100AE7972 /* UIImage+ClipAndCapture.m in Sources */,
 				D44568A81D65DCD900AE7972 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +509,7 @@
 				D44568D21D65DCD900AE7972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D44568D31D65DCD900AE7972 /* Build configuration list for PBXNativeTarget "ImageClippedTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +518,7 @@
 				D44568D51D65DCD900AE7972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D44568D61D65DCD900AE7972 /* Build configuration list for PBXNativeTarget "ImageClippedUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +527,7 @@
 				D44568D81D65DCD900AE7972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

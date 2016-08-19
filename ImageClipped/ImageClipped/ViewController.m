@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIImage+ClipAndCapture.h"
 
 @interface ViewController ()
 
@@ -24,9 +25,34 @@
     
     //[self clipImage];
     
-    [self clipCircleImage];
+//    [self clipCircleImage];
+    
+//    [self captureScreen];
+    
+    
+//    UIImage *newImg = [UIImage imageWithCaptureView:self.view];
+    
+    UIImage *newImg = [UIImage imageWithName:@"IMG_0008.png" borderWith:8 borderColor:[UIColor magentaColor]];
+    
+    NSData *data = UIImagePNGRepresentation(newImg);
+    [data writeToFile:@"/Users/LeeHow/Desktop/clip0.png" atomically:YES];
 }
 
+
+- (void)captureScreen {
+
+    UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, NO, 1);
+    
+    // 渲染控制器的view到上下文，注意：：：图层只能用渲染，不能用draw
+    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    
+    UIImage *capture = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    NSData *data = UIImagePNGRepresentation(capture);
+    [data writeToFile:@"/Users/LeeHow/Desktop/capture.png" atomically:YES];
+}
 
 - (void)clipCircleImage {
 
