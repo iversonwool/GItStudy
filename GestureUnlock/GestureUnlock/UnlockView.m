@@ -10,6 +10,15 @@
 #import "UnlockView.h"
 #import "UIView+TransformFrame.h"
 
+@interface UnlockView ()
+/** 保存滑动过程中选中的按钮*/
+@property (nonatomic, strong) NSMutableArray *btns;
+/** 记录滑动的位置*/
+@property (nonatomic, assign) CGPoint movePoint;
+
+
+@end
+
 const int dotWidth = 74;
 
 @implementation UnlockView
@@ -19,11 +28,20 @@ const int dotWidth = 74;
 //
 //}
 
+- (NSMutableArray *)btns {
+
+    if (!_btns) {
+        _btns = [NSMutableArray array];
+    }
+    return _btns;
+}
+
 // 解析xib时调用
 - (instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
         [self configUI];
+        self.movePoint = CGPointZero;
     }
     return self;
 }
@@ -47,8 +65,7 @@ const int dotWidth = 74;
     CGFloat margin = (self.bounds.size.width - 3*dotWidth) / 4;
     for (int i=0; i<self.subviews.count; i++) {
         UIButton *btn = self.subviews[i];
-        btn.lh_width = 74;
-        btn.lh_height = 74;
+        btn.lh_width = btn.lh_height = dotWidth;
         btn.lh_left = margin + (margin + dotWidth) * (i % 3);
         btn.lh_top = (margin + dotWidth) * (i / 3);
     }
@@ -58,6 +75,7 @@ const int dotWidth = 74;
 - (CGPoint)getPointFromTouches:(NSSet<UITouch *> *)touches {
     
     UITouch *touch = [touches anyObject];
+    
     return [touch locationInView:self];
 }
 
@@ -66,6 +84,7 @@ const int dotWidth = 74;
     for (UIButton *btn in self.subviews) {
         bool contains = CGRectContainsPoint(btn.frame, point);
         if (contains) {
+            
             return btn;
         }
     }
@@ -75,10 +94,12 @@ const int dotWidth = 74;
 // 改变button的状态
 - (void)changeButtonStateWithTouches:(NSSet<UITouch *> *)touches {
     CGPoint point = [self getPointFromTouches:touches];
-    
+    self.movePoint = point;
     UIButton *btn = [self getButtonFromPoint:point];
-    if (btn) {
+    if (btn&&btn.selected==NO) {
         btn.selected = YES;
+        [self.btns addObject:btn];
+
     }
 }
 
@@ -86,10 +107,14 @@ const int dotWidth = 74;
 
     
     [self changeButtonStateWithTouches:touches];
+
 }
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self changeButtonStateWithTouches:touches];
+
+    [self setNeedsDisplay];
+
 }
 
 // Only override drawRect: if you perform custom drawing.
@@ -97,6 +122,29 @@ const int dotWidth = 74;
 - (void)drawRect:(CGRect)rect {
     // Drawing code
     
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    
+    
+    for (int i=0; i<self.btns.count; i++) {
+        
+        UIButton *btn = self.btns[i];
+        if (i==0) {
+            [path moveToPoint:btn.center];
+        } else {
+            [path addLineToPoint:btn.center];
+        }
+    }
+    
+    if (_movePoint.x||_movePoint.y) {
+        // 消除点的存在的警告
+        [path addLineToPoint:self.movePoint];
+
+    }
+    [[UIColor greenColor] setStroke];
+    path.lineWidth = 8;
+    path.lineJoinStyle = kCGLineJoinRound;
+    
+    [path stroke];
     
 }
 
