@@ -14,12 +14,10 @@ const int dotWidth = 74;
 
 @implementation UnlockView
 
-
 // 加载xib完成时调用
 //- (void)awakeFromNib {
 //
 //}
-
 
 // 解析xib时调用
 - (instancetype)initWithCoder:(NSCoder *)coder {
@@ -42,7 +40,6 @@ const int dotWidth = 74;
         [self addSubview:btn];
     }
 }
-
 
 - (void)layoutSubviews {
     [super layoutSubviews];
@@ -97,9 +94,11 @@ const int dotWidth = 74;
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
-//- (void)drawRect:(CGRect)rect {
-//    // Drawing code
-//}
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+    
+    
+}
 
 
 @end

@@ -117,16 +117,16 @@
 		D44568E91D670D7C00AE7972 /* GestureUnlock */ = {
 			isa = PBXGroup;
 			children = (
+				D445691D1D670D9E00AE7972 /* 手势解锁 */,
 				D44568ED1D670D7C00AE7972 /* AppDelegate.h */,
 				D44568EE1D670D7C00AE7972 /* AppDelegate.m */,
 				D44568F01D670D7C00AE7972 /* ViewController.h */,
 				D44568F11D670D7C00AE7972 /* ViewController.m */,
 				D445692B1D67123E00AE7972 /* UIView+TransformFrame.h */,
 				D445692C1D67123E00AE7972 /* UIView+TransformFrame.m */,
-				D445691D1D670D9E00AE7972 /* 手势解锁 */,
-				D44568F31D670D7C00AE7972 /* Main.storyboard */,
 				D44569281D670F2500AE7972 /* UnlockView.h */,
 				D44569291D670F2500AE7972 /* UnlockView.m */,
+				D44568F31D670D7C00AE7972 /* Main.storyboard */,
 				D44568F61D670D7C00AE7972 /* Assets.xcassets */,
 				D44568F81D670D7C00AE7972 /* LaunchScreen.storyboard */,
 				D44568FB1D670D7C00AE7972 /* Info.plist */,
@@ -539,6 +539,7 @@
 				D44569161D670D7D00AE7972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D44569171D670D7D00AE7972 /* Build configuration list for PBXNativeTarget "GestureUnlockTests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +548,7 @@
 				D44569191D670D7D00AE7972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D445691A1D670D7D00AE7972 /* Build configuration list for PBXNativeTarget "GestureUnlockUITests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +557,7 @@
 				D445691C1D670D7D00AE7972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

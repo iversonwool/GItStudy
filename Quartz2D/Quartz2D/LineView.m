@@ -17,9 +17,6 @@
 
 @implementation LineView
 
-
-
-
 // 当视图第一次显示的时候调用该方法
 // rect == self.bounds
 
@@ -28,7 +25,7 @@
 - (void)drawRect:(CGRect)rect {
     // Drawing code
     
-    //[self drawLine];
+    [self drawLine];
     
     //[self drawBezierLine];
     
@@ -36,7 +33,7 @@
     
 //    [self drawRectangle];
 //    [self drawOval];
-    [self drawArc];
+//    [self drawArc];
 }
 
 
@@ -142,25 +139,32 @@
 #pragma mark - 画直线
 
 - (void)drawLine {
-    // 1.获取上下文
-    // CGContextRef CoreGraphics Ref 引用
-    // 获取当前上下文
-    CGContextRef context = UIGraphicsGetCurrentContext();
+//    // 1.获取上下文
+//    // CGContextRef CoreGraphics Ref 引用
+//    // 获取当前上下文
+//    CGContextRef context = UIGraphicsGetCurrentContext();
+//    
+//    // 2.设置路径 Bezier曲线
+//    UIBezierPath *path = [UIBezierPath bezierPath];
+//    
+//    // 3.设置起点
+//    [path moveToPoint:CGPointMake(10, 10)];
+//    
+//    // 画到某个点
+//    [path addLineToPoint:CGPointMake(125, 125)];
+//    
+//    // 4.把路径添加到上下文
+//    CGContextAddPath(context, path.CGPath);
+//    
+//    // 5.渲染到界面
+//    CGContextStrokePath(context);
+//    
     
-    // 2.设置路径 Bezier曲线
-    UIBezierPath *path = [UIBezierPath bezierPath];
-    
-    // 3.设置起点
-    [path moveToPoint:CGPointMake(10, 10)];
-    
-    // 画到某个点
-    [path addLineToPoint:CGPointMake(125, 125)];
-    
-    // 4.把路径添加到上下文
-    CGContextAddPath(context, path.CGPath);
-    
-    // 5.渲染到界面
-    CGContextStrokePath(context);
+    // 简易画法
+    UIBezierPath *path0 = [UIBezierPath bezierPath];
+    [path0 moveToPoint:CGPointMake(10, 10)];
+    [path0 addLineToPoint:CGPointMake(100, 100)];
+    [path0 stroke];
 }
 
 
