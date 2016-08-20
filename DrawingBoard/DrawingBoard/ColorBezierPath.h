@@ -1,5 +1,5 @@
 //
-//  DrawingBoardView.h
+//  ColorBezierPath.h
 //  DrawingBoard
 //
 //  Created by 李浩 on 16/8/20.
@@ -8,14 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DrawingBoardView : UIView
+@interface ColorBezierPath : UIBezierPath
 
-/** 线宽*/
-@property (nonatomic, assign) CGFloat lineW;
-
-/** color*/
 @property (nonatomic, strong) UIColor *color;
-
-
++ (instancetype)colorBezierPathWithColor:(UIColor *)color lineWidth:(CGFloat)lineWidth startPoint:(CGPoint)startPoint;
 
 @end

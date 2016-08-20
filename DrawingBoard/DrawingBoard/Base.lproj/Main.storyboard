@@ -34,11 +34,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5zF-cG-icH">
                                 <rect key="frame" x="0.0" y="520" width="600" height="80"/>
                                 <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fXM-aZ-iP3">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="fXM-aZ-iP3">
                                         <rect key="frame" x="8" y="0.0" width="584" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="9UG-VE-bwt"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="slideValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="37Q-fA-gbw"/>
+                                        </connections>
                                     </slider>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFY-XA-J6C">
                                         <rect key="frame" x="10" y="40" width="180" height="30"/>
@@ -46,14 +49,23 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Jfx-Oh-xaL"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v7m-uY-civ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4F5-CS-jvK">
                                         <rect key="frame" x="210" y="40" width="180" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pth-Fu-0WB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9Y-w6-Co7">
                                         <rect key="frame" x="410" y="40" width="180" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9BG-ME-WOB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -94,6 +106,9 @@
                             <constraint firstItem="5zF-cG-icH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ymd-G6-P0K"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="boardView" destination="d9T-eU-WNR" id="1op-H0-bfH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

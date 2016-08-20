@@ -7,6 +7,7 @@
 //
 
 #import "DrawingBoardView.h"
+#import "ColorBezierPath.h"
 
 @interface DrawingBoardView ()
 
@@ -17,6 +18,12 @@
 @end
 
 @implementation DrawingBoardView
+
+- (void)awakeFromNib {
+    // initialize line width
+    self.lineW = 2;
+}
+
 
 - (NSMutableArray *)paths {
     if (!_paths) {
@@ -29,10 +36,11 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
     // start point
-    UIBezierPath *path = [UIBezierPath bezierPath];
+    // 由于bezier path没有颜色设置 所以自定义ColorBezierPath继承BezierPath 添加颜色属性
+    
+    ColorBezierPath *path = [ColorBezierPath colorBezierPathWithColor:self.color lineWidth:self.lineW startPoint:[self getPointFromTouches:touches]];
     self.path = path;
     [self.paths addObject:self.path];
-    [path moveToPoint:[self getPointFromTouches:touches]];
 }
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -58,7 +66,8 @@
     // Drawing code
     
     [self.paths enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        UIBezierPath *path = obj;
+        ColorBezierPath *path = obj;
+        [path.color setStroke];
         [path stroke];
     }];
     

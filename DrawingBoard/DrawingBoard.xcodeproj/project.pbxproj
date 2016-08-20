@@ -16,6 +16,7 @@
 		D44569551D67EA3000AE7972 /* DrawingBoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D44569541D67EA3000AE7972 /* DrawingBoardTests.m */; };
 		D44569601D67EA3000AE7972 /* DrawingBoardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D445695F1D67EA3000AE7972 /* DrawingBoardUITests.m */; };
 		D445696F1D67EDDE00AE7972 /* DrawingBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = D445696E1D67EDDE00AE7972 /* DrawingBoardView.m */; };
+		D44569721D67F82E00AE7972 /* ColorBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = D44569711D67F82E00AE7972 /* ColorBezierPath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		D44569611D67EA3000AE7972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D445696D1D67EDDE00AE7972 /* DrawingBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingBoardView.h; sourceTree = "<group>"; };
 		D445696E1D67EDDE00AE7972 /* DrawingBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingBoardView.m; sourceTree = "<group>"; };
+		D44569701D67F82E00AE7972 /* ColorBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorBezierPath.h; sourceTree = "<group>"; };
+		D44569711D67F82E00AE7972 /* ColorBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorBezierPath.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				D445693E1D67EA3000AE7972 /* AppDelegate.m */,
 				D44569401D67EA3000AE7972 /* ViewController.h */,
 				D44569411D67EA3000AE7972 /* ViewController.m */,
+				D44569701D67F82E00AE7972 /* ColorBezierPath.h */,
+				D44569711D67F82E00AE7972 /* ColorBezierPath.m */,
 				D44569431D67EA3000AE7972 /* Main.storyboard */,
 				D445696D1D67EDDE00AE7972 /* DrawingBoardView.h */,
 				D445696E1D67EDDE00AE7972 /* DrawingBoardView.m */,
@@ -280,6 +285,7 @@
 			files = (
 				D445696F1D67EDDE00AE7972 /* DrawingBoardView.m in Sources */,
 				D44569421D67EA3000AE7972 /* ViewController.m in Sources */,
+				D44569721D67F82E00AE7972 /* ColorBezierPath.m in Sources */,
 				D445693F1D67EA3000AE7972 /* AppDelegate.m in Sources */,
 				D445693C1D67EA3000AE7972 /* main.m in Sources */,
 			);
@@ -505,6 +511,7 @@
 				D44569661D67EA3000AE7972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D44569671D67EA3000AE7972 /* Build configuration list for PBXNativeTarget "DrawingBoardTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +520,7 @@
 				D44569691D67EA3000AE7972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D445696A1D67EA3000AE7972 /* Build configuration list for PBXNativeTarget "DrawingBoardUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +529,7 @@
 				D445696C1D67EA3000AE7972 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

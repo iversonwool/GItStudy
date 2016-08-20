@@ -7,12 +7,25 @@
 //
 
 #import "ViewController.h"
+#import "DrawingBoardView.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet DrawingBoardView *boardView;
 
 @end
 
 @implementation ViewController
+- (IBAction)btnClicked:(id)sender {
+    UIButton *btn = sender;
+    self.boardView.color = btn.backgroundColor;
+}
+
+
+- (IBAction)slideValueChanged:(id)sender {
+    UISlider *slider = sender;
+    self.boardView.lineW = slider.value;
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
