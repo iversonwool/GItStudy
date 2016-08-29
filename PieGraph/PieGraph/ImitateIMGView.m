@@ -10,8 +10,6 @@
 
 @interface ImitateIMGView ()
 
-
-
 @end
 
 @implementation ImitateIMGView

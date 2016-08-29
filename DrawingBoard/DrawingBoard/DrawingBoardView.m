@@ -8,6 +8,7 @@
 
 #import "DrawingBoardView.h"
 #import "ColorBezierPath.h"
+#import "UIImage+ClipAndCapture.h"
 
 @interface DrawingBoardView ()
 
@@ -64,14 +65,51 @@
 // 会把之前全部清空， 重新绘制
 - (void)drawRect:(CGRect)rect {
     // Drawing code
+    if (!self.paths.count) {
+        return;
+    }
     
     [self.paths enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        ColorBezierPath *path = obj;
-        [path.color setStroke];
-        [path stroke];
+        
+        if ([obj isKindOfClass:[UIBezierPath class]]) {
+            ColorBezierPath *path = obj;
+            [path.color setStroke];
+            [path stroke];
+        } else {
+            UIImage *img = obj;
+            [img drawInRect:self.bounds];
+        }
+        
     }];
-    
 }
 
+- (void)clear {
+    [self.paths removeAllObjects];
+    [self setNeedsDisplay];
+}
 
+- (void)undo {
+    [self.paths removeLastObject];
+    [self setNeedsDisplay];
+}
+
+- (void)save {
+    UIImage *img = [UIImage imageWithCaptureView:self];
+    UIImageWriteToSavedPhotosAlbum(img, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+}
+
+- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
+    if (error) {
+        NSLog(@"%@", error.description);
+    } else {
+        NSLog(@"success");
+    }
+}
+
+- (void)setImage:(UIImage *)image {
+    _image = image;
+//    [_image drawAtPoint:CGPointZero];
+    [self.paths addObject:image];
+    [self setNeedsDisplay];
+}
 @end

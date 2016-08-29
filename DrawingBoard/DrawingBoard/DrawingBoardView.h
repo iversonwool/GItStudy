@@ -16,6 +16,16 @@
 /** color*/
 @property (nonatomic, strong) UIColor *color;
 
+@property (nonatomic, strong) UIImage *image;
 
 
+/** 清屏功能*/
+// 清屏功能交给自己来做 不让外部操作我的paths 数组
+- (void)clear;
+
+/** 撤销*/
+- (void)undo;
+
+
+- (void)save;
 @end

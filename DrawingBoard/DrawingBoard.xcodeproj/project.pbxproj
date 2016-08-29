@@ -17,6 +17,8 @@
 		D44569601D67EA3000AE7972 /* DrawingBoardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D445695F1D67EA3000AE7972 /* DrawingBoardUITests.m */; };
 		D445696F1D67EDDE00AE7972 /* DrawingBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = D445696E1D67EDDE00AE7972 /* DrawingBoardView.m */; };
 		D44569721D67F82E00AE7972 /* ColorBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = D44569711D67F82E00AE7972 /* ColorBezierPath.m */; };
+		D44569751D67FF6A00AE7972 /* UIImage+ClipAndCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = D44569741D67FF6A00AE7972 /* UIImage+ClipAndCapture.m */; };
+		D44569781D6838D700AE7972 /* PaddingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D44569771D6838D700AE7972 /* PaddingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		D445696E1D67EDDE00AE7972 /* DrawingBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingBoardView.m; sourceTree = "<group>"; };
 		D44569701D67F82E00AE7972 /* ColorBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorBezierPath.h; sourceTree = "<group>"; };
 		D44569711D67F82E00AE7972 /* ColorBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorBezierPath.m; sourceTree = "<group>"; };
+		D44569731D67FF6A00AE7972 /* UIImage+ClipAndCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ClipAndCapture.h"; sourceTree = "<group>"; };
+		D44569741D67FF6A00AE7972 /* UIImage+ClipAndCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ClipAndCapture.m"; sourceTree = "<group>"; };
+		D44569761D6838D700AE7972 /* PaddingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaddingView.h; sourceTree = "<group>"; };
+		D44569771D6838D700AE7972 /* PaddingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaddingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +119,13 @@
 				D44569411D67EA3000AE7972 /* ViewController.m */,
 				D44569701D67F82E00AE7972 /* ColorBezierPath.h */,
 				D44569711D67F82E00AE7972 /* ColorBezierPath.m */,
+				D44569731D67FF6A00AE7972 /* UIImage+ClipAndCapture.h */,
+				D44569741D67FF6A00AE7972 /* UIImage+ClipAndCapture.m */,
 				D44569431D67EA3000AE7972 /* Main.storyboard */,
 				D445696D1D67EDDE00AE7972 /* DrawingBoardView.h */,
 				D445696E1D67EDDE00AE7972 /* DrawingBoardView.m */,
+				D44569761D6838D700AE7972 /* PaddingView.h */,
+				D44569771D6838D700AE7972 /* PaddingView.m */,
 				D44569461D67EA3000AE7972 /* Assets.xcassets */,
 				D44569481D67EA3000AE7972 /* LaunchScreen.storyboard */,
 				D445694B1D67EA3000AE7972 /* Info.plist */,
@@ -283,6 +293,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44569781D6838D700AE7972 /* PaddingView.m in Sources */,
+				D44569751D67FF6A00AE7972 /* UIImage+ClipAndCapture.m in Sources */,
 				D445696F1D67EDDE00AE7972 /* DrawingBoardView.m in Sources */,
 				D44569421D67EA3000AE7972 /* ViewController.m in Sources */,
 				D44569721D67F82E00AE7972 /* ColorBezierPath.m in Sources */,

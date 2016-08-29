@@ -17,20 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LyH-8K-Bjm">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Sdy-Vu-mcn"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem title="清屏" id="Oah-HW-fYb"/>
-                                    <barButtonItem title="撤销" id="tRz-gI-iPy"/>
-                                    <barButtonItem title="橡皮擦" id="RPR-Xp-ZxJ"/>
-                                    <barButtonItem title="照片" id="yWv-i4-itd"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="MFD-EU-xqI"/>
-                                    <barButtonItem title="保存" id="01X-kw-ch0"/>
-                                </items>
-                            </toolbar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5zF-cG-icH">
                                 <rect key="frame" x="0.0" y="520" width="600" height="80"/>
                                 <subviews>
@@ -68,7 +54,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="oFY-XA-J6C" secondAttribute="bottom" constant="10" id="0Ui-45-3cw"/>
                                     <constraint firstItem="4F5-CS-jvK" firstAttribute="centerY" secondItem="oFY-XA-J6C" secondAttribute="centerY" id="MuL-RE-IYf"/>
@@ -91,6 +77,40 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="456"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LyH-8K-Bjm">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Sdy-Vu-mcn"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="清屏" id="Oah-HW-fYb">
+                                        <connections>
+                                            <action selector="clear:" destination="BYZ-38-t0r" id="Qnk-UP-5dt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="撤销" id="tRz-gI-iPy">
+                                        <connections>
+                                            <action selector="undo:" destination="BYZ-38-t0r" id="sEV-b3-TgU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="橡皮擦" id="RPR-Xp-ZxJ">
+                                        <connections>
+                                            <action selector="erase:" destination="BYZ-38-t0r" id="E6w-X8-eTT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="照片" id="yWv-i4-itd">
+                                        <connections>
+                                            <action selector="selectPicture:" destination="BYZ-38-t0r" id="N91-KM-JGB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="MFD-EU-xqI"/>
+                                    <barButtonItem title="保存" id="01X-kw-ch0">
+                                        <connections>
+                                            <action selector="save:" destination="BYZ-38-t0r" id="zw3-VH-lkK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -112,6 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="521" y="32"/>
         </scene>
     </scenes>
 </document>

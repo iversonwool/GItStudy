@@ -34,9 +34,6 @@
     [[UIColor greenColor] setFill];
     
     CGContextFillPath(currentCtx);
-    
-    
-
 }
 
 
